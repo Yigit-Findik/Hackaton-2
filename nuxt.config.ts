@@ -2,6 +2,9 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
+  router: {
+    middleware: ['auth'],
+  },
   postcss: {
     plugins: {
       tailwindcss: {},
